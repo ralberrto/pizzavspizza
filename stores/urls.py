@@ -11,4 +11,9 @@ urlpatterns = [
         views.PizzeriaRetrieveUpdateAPIView.as_view(),
         name="pizzeria_update",
     ),
+    path(
+        "delete/<int:id>/",
+        views.PizzeriaDestroyAPIView.as_view(),
+        name="pizzeria_delete",
+    ),
 ]
