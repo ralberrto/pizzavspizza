@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Broken Cheese",
+        "city": "Zapopan",
+        "zip_code": 45178
+    },
+    {
+        "id": 2,
+        "name": "Petra",
+        "city": "Zapopan",
+        "zip_code": 45178
+    },
+    {
+        "id": 3,
+        "name": "Petra",
+        "city": "Zapopan",
+        "zip_code": 45179
+    },
+    {
+        "id": 4,
+        "name": "Pizza Nostra",
+        "city": "Lagos de Moreno",
+        "zip_code": 47420
+    }
+]
