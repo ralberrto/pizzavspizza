@@ -27,11 +27,15 @@ class PizzaList extends React.Component {
 
     render() {
         return (
-            <div className='pizzeria-list'>
+            <ul className='pizzeria-list'>
                 {this.state.pizzerias.map((pizzeria) => (
-                    <PizzaDetail key={pizzeria.id} pizzeria={pizzeria} />
+                    <li
+                        className='pizzeria-entry'
+                        key={pizzeria.id} >
+                        {pizzeria.name} - {pizzeria.city}
+                    </li>
                 ))}
-            </div>
+            </ul>
         );
     }
 }
