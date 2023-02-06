@@ -1,5 +1,6 @@
 import React from 'react';
 import DummyData from './dummydata.json';
+import PizzaDetail from './pizzeriadetails';
 
 
 class PizzaList extends React.Component {
@@ -7,7 +8,7 @@ class PizzaList extends React.Component {
         return (
             <div className='pizzeria-list'>
                 {DummyData.map((pizzeria) => (
-                    <h4 key={pizzeria.id}>{pizzeria.name} - {pizzeria.city}</h4>
+                    <PizzaDetail key={pizzeria.id} pizzeria={pizzeria} />
                 ))}
             </div>
         );
