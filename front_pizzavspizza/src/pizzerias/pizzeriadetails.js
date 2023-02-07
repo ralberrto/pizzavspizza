@@ -1,5 +1,4 @@
 import React from 'react';
-import DummyData from './dummydata.json';
 
 
 class PizzaDetail extends React.Component {
@@ -7,9 +6,17 @@ class PizzaDetail extends React.Component {
         const { pizzeria } = { ...this.props };
 
         return (
-            <div className='pizzeria-details'>
+            <div
+                className='pizzeria-details'
+                style={{ color: "yellow" }}
+            >
                 <h4>{pizzeria.name}</h4>
-                <h4>{pizzeria.city}</h4>
+                <h5>
+                    Address: {pizzeria.street} {pizzeria.city} {pizzeria.state} {pizzeria.zip_code}
+                </h5>
+                <h6>Phone: {pizzeria.phone_number}</h6>
+                <h6>Email: {pizzeria.email}</h6>
+                <p>{pizzeria.description}</p>
             </div>
         );
     }
