@@ -1,6 +1,8 @@
 import logo from './logo.png';
 import './App.css';
 import PizzaList from './pizzerias/pizzeriaslist';
+import PizzaForm from './pizzerias/pizzeriaform';
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         <h1>
           Pizza vs Pizza
         </h1>
+        <PizzaForm />
         <PizzaList />
       </header>
     </div>
