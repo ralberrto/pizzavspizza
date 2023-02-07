@@ -21,7 +21,7 @@ class PizzeriaUpdate extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         axios
-            .patch('http://127.0.0.1:8000'.concat(this.state.pizzeriaObj.update), {
+            .patch(process.env.REACT_APP_URL.concat(this.state.pizzeriaObj.update), {
                 description: this.state.value,
             })
             .then((response) => console.log(response))

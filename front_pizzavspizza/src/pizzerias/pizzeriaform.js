@@ -29,7 +29,7 @@ class PizzaForm extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         axios
-            .post('http://127.0.0.1:8000/create/', {
+            .post(process.env.REACT_APP_URL.concat('/create/'), {
                 name: this.state.name,
                 street: this.state.street,
                 city: this.state.city,

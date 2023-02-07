@@ -19,7 +19,7 @@ class PizzaDetail extends React.Component {
 
     deletePizzeriaEntry(pizzeria) {
         axios
-            .delete('http://127.0.0.1:8000'.concat(pizzeria.delete))
+            .delete(process.env.REACT_APP_URL.concat(pizzeria.delete))
             .then((response) => console.log(response))
             .catch((err) => console.log(err));
     }

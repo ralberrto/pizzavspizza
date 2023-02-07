@@ -18,7 +18,7 @@ class PizzaList extends React.Component {
 
     getPizzeriaDetails(pizzeria) {
         const response = axios
-            .get('http://127.0.0.1:8000'.concat(pizzeria.absolute_url))
+            .get(process.env.REACT_APP_URL.concat(pizzeria.absolute_url))
             .then((response) => {
                 this.setState({ pizzeria: response.data });
             })
@@ -33,7 +33,7 @@ class PizzaList extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://127.0.0.1:8000/')
+            .get(process.env.REACT_APP_URL)
             .then((response) => {
                 console.log('Is this still running twice?')
                 this.setState({ pizzerias: response.data });
